@@ -6,5 +6,4 @@ if ativo and logado:
 elif not ativo:
     print("Voce precisa se cadastrar.")
 elif not logado:
-    print("Voce precisa fazer login") 
-
+    print("Voce precisa fazer login")

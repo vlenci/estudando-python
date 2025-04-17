@@ -28,5 +28,3 @@ print("\n")
 print("Operador 'or'com false/false:", falso or falso)
 print("\n")
 print("Operador 'and'com false/false:", falso and falso)
-
-

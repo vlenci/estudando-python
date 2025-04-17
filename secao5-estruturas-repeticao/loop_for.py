@@ -4,7 +4,7 @@ nome = "Vinícius Lenci"
 for letra in nome:
     print(letra)
 
-    
+
 print(nome[0:8])
 
 # Obviamente ele não vai até 300, ele para assim que acabar a lista de strings de 1 caractere
@@ -18,19 +18,19 @@ for valor in enumerate(nome):
 # Pega apenas a primeira parte (letra)
 for _, valor in enumerate(nome):
     print(valor)
-    
+
 # Pega apenas a segunda parte (indice da letra)
 for valor, _ in enumerate(nome):
-    print(valor)    
+    print(valor)
 
 # Para imprimir sem \n
 for letra in nome:
-    print(letra, end='')    
+    print(letra, end="")
 
 
 print("\n")
 
 
-emoji = "\U0001F60D "
+emoji = "\U0001f60d "
 for num in range(1, 11):
     print(emoji * num)

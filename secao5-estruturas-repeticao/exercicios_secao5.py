@@ -1,5 +1,7 @@
-print("Ex. 1: Faça um programa que determine e mostre os cinco primeiros" \
-" múltiplos de 3, considerando números maiores que 0.")
+print(
+    "Ex. 1: Faça um programa que determine e mostre os cinco primeiros"
+    " múltiplos de 3, considerando números maiores que 0."
+)
 
 
 n = 0
@@ -15,7 +17,7 @@ print(
     "na tela uma contagem regressiva, iniciando "
     "em 10 e terminando em 0. Mostre também uma mensagem “FIM!” após a contagem."
 )
-            
+
 
 contador = 10
 
@@ -27,4 +29,3 @@ print("FIM!")
 
 for numero in range(0, 100001, 1000):
     print(numero)
-

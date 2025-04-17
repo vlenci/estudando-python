@@ -3,7 +3,7 @@ print(type(nome))
 
 
 caractere = "c"
-print(type(caractere)) # Não existe tipo "char" em Python
+print(type(caractere))  # Não existe tipo "char" em Python
 
 # [ 0,   1,   2,   3,   4,   5,   6,   7,   8,   9]
 # ['V', 'i', 'n', 'i', ' ', 'L', 'e', 'n', 'c', 'i']

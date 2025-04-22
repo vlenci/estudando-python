@@ -67,3 +67,7 @@ print(receita)
 # Forma 2 
 del receita["fev"]
 print(receita)
+
+# Cria um dicionário com keys DIFERENTES mas com o mesmo valor
+dicionario = {}.fromkeys([1, 2, 3, 4, 5, 6], "chama")
+print(dicionario)

@@ -46,6 +46,7 @@ nome = "Vinícius Lenci"
 tupla_nome = tuple(nome)
 
 print(tupla_nome)
+print(tupla_nome[3]) # As tuplas também são indexadas
 print(tupla_nome.count('c')) # Mesma função que usamos em Listas funciona para Tupla
 
 # Nesse exemplo faz sentido usar tupla porque os meses do ano não mudam

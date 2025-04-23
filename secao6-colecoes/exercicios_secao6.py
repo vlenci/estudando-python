@@ -25,7 +25,22 @@ print("c) Modifique a lista na posição 5, atribuindo a esta posição o valor 
 # d)
 print("d) Mostre na tela cada valor da lista A, um em cada linha.")
 
+A : list[int] = [1, 0, 5, -2, -5, 7]
+soma : int = A[0] + A[1] + A[5]
 
+print(f"A soma dos valores originais da lista é: {soma}")
+
+A[5] = 100
+
+"""
+for num in A:
+    print(A[num]) 
+Aqui vai dar erro porque o "num" acessa o valor da lista
+e não o indíce!
+"""
+
+for num in A:
+    print(num) 
 
 # -----------------------------------------
 # Exercício 3
@@ -33,3 +48,20 @@ print("d) Mostre na tela cada valor da lista A, um em cada linha.")
 print("\n3. Faça um programa que leia 10 valores, armazene-os em uma lista e apresente quantos valores pares ele possui.")
 
 # Código da lógica aqui...
+
+n = 0
+pares = 0
+lista_ex3 = []
+
+while n < 10: 
+    valor = int(input(f"Insira o valor {n + 1}/10: "))
+    lista_ex3.append(valor)
+    n += 1
+
+    if valor % 2 == 0:
+        pares += 1
+    
+print(f"A lista apresenta {pares} números pares!")
+        
+
+

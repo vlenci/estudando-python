@@ -42,6 +42,7 @@ minha_funcao(18, 'Felicity', 4, 5, 3, solteiro=True)
 minha_funcao(34, 'Felipe', eu='Não', voce='Vai')
 minha_funcao(19, 'Carla', 9, 4, 3, java=False, python=True)
 
+# Função com a ordem correta de parâmetros
 def mostra_indo(a, b, *args, instrutor = "Geek", **kwargs):
     return [a, b, args, instrutor, kwargs]
 

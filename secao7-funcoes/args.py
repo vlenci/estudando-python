@@ -20,7 +20,8 @@ print(soma_todos_numeros_tupla(4, 6, 9))
 
 numeros = (1, 2, 3, 4)
 
-print(soma_todos_numeros_tupla(*numeros))
+print(soma_todos_numeros_tupla(*numeros)) # o '*' informa para o python que estou passando uma coleção
+                                          # e ele precisará desempacotar os valores.
 
 def verifica_info(*args):
     if "Vinícius" in args and "Lenci" in args:

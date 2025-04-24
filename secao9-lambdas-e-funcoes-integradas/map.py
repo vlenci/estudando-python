@@ -2,9 +2,11 @@
 
 import math
 
+
 def area(r):
     """Calcula área de um círculo de raio r"""
-    return math.pi * (r ** 2)
+    return math.pi * (r**2)
+
 
 print(area(2))
 print(area(5.3))
@@ -24,14 +26,15 @@ print(areas)
 # passa um valor de cada vez do iterável para dentro da função
 
 areas = map(area, raios)
-print(areas) # Não imprime a lista em si, apenas <map object at 0x00000155B23BBDC0>
+print(areas)  # Não imprime a lista em si, apenas <map object at 0x00000155B23BBDC0>
 print(type(areas))
 print(list(areas))
-print(list(areas)) # Imprime lista vazia, já que após usar a função map() ele zera.
+# Imprime lista vazia, já que após usar a função map() ele zera.
+print(list(areas))
 
 # Forma 3 - Map com Lambda
 
-print(list(map(lambda r: math.pi * (r **2), raios)))
+print(list(map(lambda r: math.pi * (r**2), raios)))
 
 # Mais um exemplo
 
@@ -39,7 +42,9 @@ cidades = [("Berlim", 29), ("Cairo", 36), ("Buenos Aires", 19)]
 
 print(cidades)
 
-celsius_para_farenheit = lambda dado: (dado[0], 9/5 * dado[1] + 32)
+
+def celsius_para_farenheit(dado):
+    return (dado[0], 9 / 5 * dado[1] + 32)
+
+
 print(list(map(celsius_para_farenheit, cidades)))
-
-

@@ -2,7 +2,7 @@
 # Crie uma função lambda que receba dois números e retorne o maior deles.
 # Use essa função para comparar diferentes pares de números.
 
-compara = lambda x, y: x if x > y else y
+compara = lambda x, y: x if x > y else y  # noqa: E731
 
 print(compara(32312312, 51312))
 

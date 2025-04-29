@@ -7,11 +7,13 @@
 # print(random.random())
 
 # Forma 2 - Mais eficiente
-from random import random
-from random import uniform
-from random import randint
-from random import choice
-from random import shuffle
+from random import (
+    random,
+    uniform,
+    randint,
+    choice,
+    shuffle,
+)
 
 for i in range(3):
     print(random())  # Não é mais necessário o random.random()

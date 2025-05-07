@@ -24,8 +24,6 @@ dias_semana = ["Segunda", "Terça", "Quarta", "Quinta", "Sexta", "Sábado", "Dom
 hoje = datetime.date.today()
 print("Hoje é:", dias_semana[hoje.weekday()])
 
-import datetime
-
 
 # Formata uma data exibindo o mês por extenso em português
 def formatar_data_em_portugues(data):

@@ -1,0 +1,17 @@
+from multiprocessing import Pool
+import time
+
+
+def contagem_regressiva(n):
+    while n > 0:
+        n -= 1
+
+
+if __name__ == "__main__":
+    inicio = time.time()
+
+    with Pool(2) as pool:
+        pool.map(contagem_regressiva, [25_000_000, 25_000_000])
+
+    fim = time.time()
+    print(f"Tempo em segundos com Pool: {fim - inicio}")

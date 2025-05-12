@@ -19,23 +19,30 @@ def cliente(estoque: Estoque) -> None:
 
         if opcao == 1:
             prod = input("Insira o nome do produto que deseja adicionar no carrinho: ")
+            produto_estoque = False
             for produto in estoque.produtos:
                 if produto.nome == prod:
+                    produto_estoque = True
                     car.adicionar_produto(produto)
                     print(f"'{prod}' adicionado com sucesso!")
                     print("\n")
                     break
-            print(f"Não existe produto com nome '{prod}' no estoque.")
-            print("")
+            if not produto_estoque:
+                print(f"Não existe produto com nome '{prod}' no estoque.")
+                print("")
         elif opcao == 2:
             prod = input("Insira o nome do produto que deseja remover do carrinho: ")
+            produto_carrinho = False
             for produto in car.produtos_carrinho:
                 if produto.nome == prod:
+                    produto_carrinho = True
                     car.remover_produto(produto)
                     print(f"Uma unidade de '{prod}' removida com sucesso!")
                     print("\n")
                     break
-            else:
+                else:
+                    continue
+            if not produto_carrinho:
                 print(f"O produto '{prod}' não está no carrinho.\n")
 
         elif opcao == 3:

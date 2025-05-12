@@ -116,11 +116,10 @@ class Carrinho:
         return self.__produtos_carrinho
 
     def adicionar_produto(self, produto: Produto) -> None:
-        if produto in self.produtos_carrinho:
+        if produto in self.produtos_carrinho and produto.qtd_estoque > 0:
             self.produtos_carrinho[produto] += 1
-        elif produto not in self.produtos_carrinho:
+        elif produto not in self.produtos_carrinho and produto.qtd_estoque > 0:
             self.produtos_carrinho[produto] = 1
-
         produto.qtd_estoque -= 1
 
     def remover_produto(self, produto: Produto) -> None:
